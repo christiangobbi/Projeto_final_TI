@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #FFFFFF;
+    --cor2: #eeecec;
+    --cor3: #009F04;
+    --cor4: #003E04;
+    --font1: serif;
+    --font2: monospace;
+}
+
+body, html {
+    background: url('../imagens/pexels-timmossholder-974314.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: var(--cor1);
+    font-family: var(--font2);
+    font-size: 1.5em;
+    padding: 15px 0;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.363);
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: var(--cor4);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--cor3);
+}
