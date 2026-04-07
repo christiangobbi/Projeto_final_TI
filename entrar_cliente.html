@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="estilo/login_cliente.css">
     <script src="https://kit.fontawesome.com/c7b045d4ce.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
         <img src="#" alt="Logo do site"> <!-- Logo do site -->
@@ -18,21 +16,23 @@
     </header>
     <main>
         <form action="#" method="get">
-            <h1>Login</h1>
+            <h1>cadastro</h1>
+            <p>
+                <label for="inome"><i class="fa-solid fa-user"></i></label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo:" class="texto">
+            </p>
             <p>
                 <label for="imail"><i class="fa-solid fa-envelope"></i></label>
-                <input type="email" name="email" id="imail" placeholder="Email: " class="texto">
+                <input type="email" name="email" id="imail" placeholder="Email:" class="texto">
             </p>
             <p>
                 <label for="isenha"><i class="fa-solid fa-key"></i></label>
-                <input type="password" name="senha" id="isenha" placeholder="Senha: " minlength="8" maxlength="16" class="texto">
+                <input type="password" name="senha" id="isenha" placeholder="Senha:" minlength="8" maxlength="16" class="texto">
             </p>
             <p>
                 <input type="submit" value="Entrar" id="botao">
             </p>
-            <a href="#">Esqueceu sua senha?</a>
         </form>
     </main>
 </body>
-
 </html>

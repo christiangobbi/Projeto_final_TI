@@ -23,6 +23,9 @@ body, html {
 }
 
 header {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
     background-color: var(--cor1);
     font-family: var(--font2);
     font-size: 1.5em;
@@ -30,8 +33,14 @@ header {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.363);
 }
 
+header img {
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
 nav {
-    float: right;
+    flex: auto 0 0;
 }
 
 nav a {
@@ -55,6 +64,7 @@ main {
 form {
     text-align: center;
     background-color: var(--cor1);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     color: var(--cor4);
     padding: 20px;
     border-radius: 10px;
@@ -70,7 +80,7 @@ form h1 {
 .texto {
     width: 60vw;
     margin: 8px;
-    padding: 5px;
+    padding: 8px;
     border-radius: 4px;
     border: none;
     border-bottom: 1px solid var(--cor4);
@@ -79,8 +89,8 @@ form h1 {
 
 #botao {
     width: 64vw;
-    margin: 8px;
-    padding: 5px;
+    margin: 15px;
+    padding: 8px;
     border-radius: 8px;
     border: none;
     background-color: var(--cor3);
@@ -96,6 +106,8 @@ form h1 {
 form a {
     color: var(--cor4);
     text-decoration: none;
+    float: left;
+    margin-left: 20px;
 }
 
 form a:hover {
