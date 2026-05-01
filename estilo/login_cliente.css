@@ -78,9 +78,9 @@ form h1 {
 }
 
 .texto {
-    width: 60vw;
+    width: 65vw;
     margin: 8px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
     border: none;
     border-bottom: 1px solid var(--cor4);
@@ -88,10 +88,10 @@ form h1 {
 }
 
 #botao {
-    width: 64vw;
+    width: 70vw;
     margin: 15px;
-    padding: 8px;
-    border-radius: 8px;
+    padding: 15px;
+    border-radius: 18px;
     border: none;
     background-color: var(--cor3);
     color: black;
@@ -104,12 +104,39 @@ form h1 {
 }
 
 form a {
+    width: 70vw;
+    font-size: 1.3em;
     color: var(--cor4);
     text-decoration: none;
     float: left;
-    margin-left: 20px;
+    margin: 5px 20px auto 20px;
 }
 
 form a:hover {
     color: var(--cor3);
+}
+
+
+@media screen and (min-width: 1024px) {
+    form {
+        width: 67vw;
+    }
+
+    form a {
+        font-size: 1.1em;
+        text-align: left;
+    }
+
+    .texto {
+        width: 57vw;
+    }
+
+    #botao {
+        width: 20vw;
+        padding: 10px;
+        margin-right: 5%;
+        border-radius: 5px;
+        float: right;
+    }
+
 }
